@@ -8,7 +8,7 @@ const socket = io();
 const { username, room } = Qs.parse(window.location.search, {
   ignoreQueryPrefix: true,
 });
-
+//xnyh
 socket.emit("joinRoom", { username: username, room: room });
 socket.on("loadChats", (chatArray) => {
   loadMessages(chatArray);
